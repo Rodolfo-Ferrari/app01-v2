@@ -1,9 +1,7 @@
-<!-- Header -->
-
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+      <ion-back-button defaultHref="home"></ion-back-button>
     </ion-buttons>
 
     <img
@@ -27,26 +25,22 @@
       </ion-thumbnail>
     </ng-template>
 
-    <!--  <ion-icon name="phone-portrait-outline" slot="end"
-    size="large" class="ion-margin-end" routerLink="/home"></ion-icon>-->
+
   </ion-toolbar>
 </ion-header>
 
-<!-- BODY -->
-
 <ion-content class="ion-padding-horizontal">
 
-  <ion-item routerLink="/perfilpet" class="item" *ngFor="let item of items | async" routerLink="/perfilpet/{{ item.id }}">
-        <ion-thumbnail slot="start" class="list-img" style="background-image: url('{{ item.foto }}');">
-    </ion-thumbnail>
-    <ion-label>
-      <h5>{{ item.nome }}</h5>
-      <p>Raça: {{item.raca}}</p>
-      <p>Idade: {{item.idade}}</p>
-      <p>Sexo: {{item.sexo}}</p>
-      <h5>Espécie: {{item.especie}}</h5>
-      </ion-label>
-  </ion-item>
+  <ion-img src="assets/Imagem1.png" alt="parabens" class="p"></ion-img>
+  <h5 class="ion-text-center"> Parabéns, você adotou um novo animalzinho, cuide com amor e carinho!</h5>
+  
+
+
+<div class="ion-text-center">
+  <ion-button size="small" color="success" (click)="whatsapp()">
+    <ion-icon name="logo-whatsapp"></ion-icon>ㅤcontato do doador</ion-button>
+
+</div>
 
 </ion-content>
 

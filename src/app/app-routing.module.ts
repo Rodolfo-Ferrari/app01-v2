@@ -89,6 +89,14 @@ const routes: Routes = [
     loadChildren: () => import('./page/confadotar/confadotar.module').then( m => m.ConfadotarPageModule),
   },
 
+  {
+    path: 'fimadotar/:petid',
+    loadChildren: () => import('./page/fimadotar/fimadotar.module').then( m => m.FimadotarPageModule),
+  },
+  {
+    path: 'user/logout',
+    loadChildren: () => import('./user/logout/logout.module').then( m => m.LogoutPageModule),
+  },
   // Rota curinga (rotas inexistentes)
   // TEM QUE SER SEMPRE A ÚLTIMA ROTA
   {
